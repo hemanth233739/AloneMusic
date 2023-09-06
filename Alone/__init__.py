@@ -36,9 +36,9 @@ app = Client(
 
 client = Client(
     "Alone",
-    config.SESSION_NAME,
     config.API_ID,
     config.API_HASH,
+    session_string=config.SESSION_NAME
     )
 
 def all_info(app, client):
