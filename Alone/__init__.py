@@ -28,14 +28,18 @@ pytgcalls = PyTgCalls(smexy)
 Music_START_TIME = time.time()
 
 app = Client(
-    "montaro1",
+    "Alone",
     config.API_ID,
     config.API_HASH,
     bot_token=config.BOT_TOKEN,
 )
 
-client = Client(config.SESSION_NAME, config.API_ID, config.API_HASH)
-
+client = Client(
+    name="Alone",
+    session_string=config.SESSION,
+    api_id=config.API_ID,
+    api_hash=config.API_HASH,
+    )
 
 def all_info(app, client):
     global BOT_ID, BOT_NAME, BOT_USERNAME
