@@ -23,7 +23,7 @@ async def load_start():
             await app.edit_message_text(
                 restart_data["chat_id"],
                 restart_data["message_id"],
-                "**Serena Restarted Successfully.**",
+                "**Alone Restarted Successfully.**",
             )
         except Exception:
             pass
@@ -40,10 +40,10 @@ async def load_start():
         except Exception as e:
             print("Error came while clearing db")
             pass
-    await app.send_message(SUPPORT, "** Serena Music Started Successfully !!**")
+    await app.send_message(SUPPORT, "** Alone X Music Started Successfully !!**")
    # Copyrighted Area
-    await client.join_chat("Serena_Support")
-    await client.join_chat("SerenaUpdates")
+    await client.join_chat("NinjaXClan")
+    await client.join_chat("NinjaXSupport")
     print("[INFO]: STARTED")
     
 
