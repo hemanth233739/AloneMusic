@@ -35,10 +35,10 @@ app = Client(
 )
 
 client = Client(
-    name="Alone",
-    session_string=config.SESSION_NAME,
-    api_id=config.API_ID,
-    api_hash=config.API_HASH,
+    "Alone",
+    config.SESSION_NAME,
+    config.API_ID,
+    config.API_HASH,
     )
 
 def all_info(app, client):
