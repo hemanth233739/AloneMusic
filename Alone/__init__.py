@@ -36,7 +36,7 @@ app = Client(
 
 client = Client(
     name="Alone",
-    session_string=config.SESSION,
+    session_string=config.SESSION_NAME,
     api_id=config.API_ID,
     api_hash=config.API_HASH,
     )
